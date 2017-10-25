@@ -1,0 +1,21 @@
+# Code by: Mattsterious
+# Current Code Date: 10/25/17
+# Original Code Date: 7/19/16
+# Description: Code used to input five items and add sales tax.
+# Updating code from Python v2.7.11 to v3.6.2
+
+# Use input instead of raw input for v3 update change. Security?
+item1 = float(input('Enter price for item 1: '))
+item2 = float(input('Enter price for item 2: '))
+item3 = float(input('Enter price for item 3: '))
+item4 = float(input('Enter price for item 4: '))
+item5 = float(input('Enter price for item 5: '))
+
+subTotal = item1 + item2 + item3 + item4 + item5
+# Fixed tax rate. Could add to user input(optional).
+salesTax = subTotal * 0.07
+total = (subTotal * 0.07) + subTotal
+
+print('Subtotal is: $', format(subTotal, '.2f'))
+print('Sales tax is: $', format(salesTax, '.2f'))
+print('Total is: $', format(total, '.2f'))
